@@ -1,69 +1,62 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-<head>
+    <link rel="stylesheet" type="text/css" href="./css/casabonita.css" />
+    <script type="text/javascript" src="./js/casabonita.js"></script>
+  </head>
 
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <body>
+    <audio controls="controls" autoplay="autoplay" style="display: none">
+      <source src="./musica/jarabe_tapatio.wav" type="audio/wav" />
+      <source src="./musica/jarabe_tapatio.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
 
-	<link rel="stylesheet" type="text/css" href="./css/casabonita.css" />
-	<script type="text/javascript" src="./js/casabonita.js"></script>
+    <div id="headerPlasma"></div>
+    <div id="headerNero"></div>
 
-</head>
+    <div id="casa_bonita">
+      <!-- INIZIO CASA BONITA -->
+      <div id="header">
+        <img onclick="home_CB()" src="./css/img/header.png" />
+      </div>
 
-<body>
+      <div id="menu">
+        <ul>
+          <li>
+            <p onclick="platos()">Platos</p>
+          </li>
+          <li>
+            <p onclick="licores()">Licores</p>
+          </li>
+          <li>
+            <p onclick="fiestas()">Fiestas</p>
+          </li>
+          <li>
+            <p onclick="chicas()">Chicas</p>
+          </li>
+          <li>
+            <p onclick="donde()" style="border-right: none">Donde</p>
+          </li>
+        </ul>
+      </div>
 
-	<audio controls="controls" autoplay="autoplay" style="display:none;">
-		<source src="./musica/jarabe_tapatio.wav" type="audio/wav">
-		<source src="./musica/jarabe_tapatio.mp3" type="audio/mp3">
-		Your browser does not support the audio element.
-	</audio>
+      <div id="fotoIndex">
+        <img src="./css/img/casamain.png" />
+      </div>
 
-	<div id="headerPlasma"></div>
-	<div id="headerNero"></div>
+      <div id="benvenuto">
+        <h1>Bienvenido!</h1>
+        <h4>"Casa Bonita donde mi casa es tu casa"</h4>
+      </div>
+    </div>
+    <!-- FINE CASA BONITA -->
 
-	<div id="casa_bonita">
-		<!-- INIZIO CASA BONITA -->
-		<div id="header">
-			<img onclick="home_CB()" src="./css/img/header.png" />
-		</div>
-
-		<div id="menu">
-			<ul>
-				<li>
-					<p onclick="platos()">Platos</p>
-				</li>
-				<li>
-					<p onclick="licores()">Licores</p>
-				</li>
-				<li>
-					<p onclick="fiestas()">Fiestas</p>
-				</li>
-				<li>
-					<p onclick="chicas()">Chicas</p>
-				</li>
-				<li>
-					<p onclick="donde()" style="border-right:none;">Donde</p>
-				</li>
-			</ul>
-		</div>
-
-		<div id="fotoIndex">
-			<img src="./css/img/casamain.png" />
-		</div>
-
-		<div id="benvenuto">
-			<h1>Bienvenido!</h1>
-			<h4>"Casa Bonita donde mi casa es tu casa"</h4>
-		</div>
-
-	</div><!-- FINE CASA BONITA -->
-
-	<div id="footerPlasma"></div>
-	<div id="footer">
-		<p>Mayta Gabriel</p>
-	</div>
-
-</body>
-
+    <div id="footerPlasma"></div>
+    <div id="footer">
+      <p>Mayta Gabriel</p>
+    </div>
+  </body>
 </html>

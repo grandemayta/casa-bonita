@@ -1,125 +1,122 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+  <head>
+    <title>Los platos mas sabrosos de Mexico</title>
 
-<head>
-	<title>Los platos mas sabrosos de Mexico</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./css/casabonita.css" />
+    <link rel="stylesheet" type="text/css" href="./css/platos.css" />
+    <script type="text/javascript" src="./js/casabonita.js"></script>
+  </head>
 
-	<link rel="stylesheet" type="text/css" href="./css/casabonita.css" />
-	<link rel="stylesheet" type="text/css" href="./css/platos.css" />
-	<script type="text/javascript" src="./js/casabonita.js"></script>
+  <body>
+    <div id="headerPlasma"></div>
+    <div id="headerNero"></div>
 
-</head>
+    <div id="casa_bonita">
+      <!-- INIZIO CASA BONITA -->
+      <div id="header">
+        <img onclick="home_CB()" src="./css/img/header.png" />
+      </div>
 
-<body>
+      <div id="menu">
+        <ul>
+          <li>
+            <p style="background: #ff9933; color: #000000; cursor: default">
+              Platos
+            </p>
+          </li>
+          <li>
+            <p onclick="licores()">Licores</p>
+          </li>
+          <li>
+            <p onclick="fiestas()">Fiestas</p>
+          </li>
+          <li>
+            <p onclick="chicas()">Chicas</p>
+          </li>
+          <li>
+            <p onclick="donde()" style="border-right: none">Donde</p>
+          </li>
+        </ul>
+      </div>
 
+      <div id="corpoPlatos">
+        <!-- INIZIO CORPO -->
+        <div id="corpoPlatosPlasma"></div>
 
-	<div id="headerPlasma"></div>
-	<div id="headerNero"></div>
+        <div class="platos_CB" style="margin-top: 60px">
+          <!-- GUACAMOLE -->
+          <img src="./css/img/guacamole.jpg" />
+          <h4>Guacamole</h4>
+          <p>Preparato ogni giorno con avocados freschi, se disponibili.</p>
+          <div class="pannello_Platos">
+            <h5>&#8364; 7,00</h5>
+            <h1 onclick="guacamole_plus()">+</h1>
+            <h2 id="guacamole">0</h2>
+            <h6 onclick="guacamole_minus()">-</h6>
+          </div>
+        </div>
 
-	<div id="casa_bonita">
-		<!-- INIZIO CASA BONITA -->
-		<div id="header">
-			<img onclick="home_CB()" src="./css/img/header.png" />
-		</div>
+        <div class="platos_CB">
+          <!-- ENCHILADAS -->
+          <img src="./css/img/enchiladas.jpg" />
+          <h4>Enchiladas</h4>
+          <p>
+            Due tortilla di mais farcite con Pollo sfilacciato, ricoperte con
+            salsa pasilla e formaggio fuso.
+          </p>
+          <div class="pannello_Platos">
+            <h5>&#8364; 8,00</h5>
+            <h1 onclick="enchiladas_plus()">+</h1>
+            <h2 id="enchiladas">0</h2>
+            <h6 onclick="enchiladas_minus()">-</h6>
+          </div>
+        </div>
 
-		<div id="menu">
-			<ul>
-				<li>
-					<p style="background:#FF9933;color:#000000;cursor:default;">Platos</p>
-				</li>
-				<li>
-					<p onclick="licores()">Licores</p>
-				</li>
-				<li>
-					<p onclick="fiestas()">Fiestas</p>
-				</li>
-				<li>
-					<p onclick="chicas()">Chicas</p>
-				</li>
-				<li>
-					<p onclick="donde()" style="border-right:none;">Donde</p>
-				</li>
-			</ul>
-		</div>
+        <div class="platos_CB">
+          <!-- SALMON EN SALSA VERDE -->
+          <img src="./css/img/salmon.jpg" />
+          <h4>Salmon en salsa Verde</h4>
+          <p>Rotolini di Salmone affumicato farciti con salsa Verde.</p>
+          <div class="pannello_Platos">
+            <h5>&#8364; 10,00</h5>
+            <h1 onclick="salmonensalsaverde_plus()">+</h1>
+            <h2 id="salmonensalsaverde">0</h2>
+            <h6 onclick="salmonensalsaverde_minus()">-</h6>
+          </div>
+        </div>
 
-		<div id="corpoPlatos">
-			<!-- INIZIO CORPO -->
-			<div id="corpoPlatosPlasma"></div>
+        <div class="platos_CB">
+          <!-- CARNE ASADA ALLA TAMPIQUENA -->
+          <img src="./css/img/carneasada.jpg" />
+          <h4>Carne Asada a la Tampiquena</h4>
+          <p>
+            Bistecca marinata e cotta alla piastra, servita con verdure
+            grigliate, riso e fagioli neri.
+          </p>
+          <div class="pannello_Platos">
+            <h5>&#8364; 13,00</h5>
+            <h1 onclick="carneasadatampiquena_plus()">+</h1>
+            <h2 id="carneasadatampiquena">0</h2>
+            <h6 onclick="carneasadatampiquena_minus()">-</h6>
+          </div>
+        </div>
 
-			<div class="platos_CB" style="margin-top: 60px;">
-				<!-- GUACAMOLE -->
-				<img src="./css/img/guacamole.jpg" />
-				<h4>Guacamole</h4>
-				<p>Preparato ogni giorno con avocados freschi, se disponibili.</p>
-				<div class="pannello_Platos">
-					<h5>&#8364; 7,00</h5>
-					<h1 onclick="guacamole_plus()">+</h1>
-					<h2 id="guacamole">0</h2>
-					<h6 onclick="guacamole_minus()">-</h6>
-				</div>
-			</div>
+        <div id="formFinto">
+          <h3 id="calcolaPlatos" onclick="calcolaPlatos()">Calcola</h3>
+          <h3 id="compraPlatos" onclick="compraPlatos()">Compra</h3>
+          <h4 id="totalePlatos"></h4>
+        </div>
+      </div>
+      <!-- FINE CORPO -->
+    </div>
+    <!-- FINE CASA BONITA -->
 
-			<div class="platos_CB">
-				<!-- ENCHILADAS -->
-				<img src="./css/img/enchiladas.jpg" />
-				<h4>Enchiladas</h4>
-				<p>Due tortilla di mais farcite con Pollo sfilacciato, ricoperte con salsa pasilla e formaggio fuso.</p>
-				<div class="pannello_Platos">
-					<h5>&#8364; 8,00</h5>
-					<h1 onclick="enchiladas_plus()">+</h1>
-					<h2 id="enchiladas">0</h2>
-					<h6 onclick="enchiladas_minus()">-</h6>
-				</div>
-			</div>
-
-			<div class="platos_CB">
-				<!-- SALMON EN SALSA VERDE -->
-				<img src="./css/img/salmon.jpg" />
-				<h4>Salmon en salsa Verde</h4>
-				<p>Rotolini di Salmone affumicato farciti con salsa Verde.</p>
-				<div class="pannello_Platos">
-					<h5>&#8364; 10,00</h5>
-					<h1 onclick="salmonensalsaverde_plus()">+</h1>
-					<h2 id="salmonensalsaverde">0</h2>
-					<h6 onclick="salmonensalsaverde_minus()">-</h6>
-				</div>
-			</div>
-
-			<div class="platos_CB">
-				<!-- CARNE ASADA ALLA TAMPIQUENA -->
-				<img src="./css/img/carneasada.jpg" />
-				<h4>Carne Asada a la Tampiquena</h4>
-				<p>Bistecca marinata e cotta alla piastra, servita con verdure grigliate, riso e fagioli neri.</p>
-				<div class="pannello_Platos">
-					<h5>&#8364; 13,00</h5>
-					<h1 onclick="carneasadatampiquena_plus()">+</h1>
-					<h2 id="carneasadatampiquena">0</h2>
-					<h6 onclick="carneasadatampiquena_minus()">-</h6>
-				</div>
-			</div>
-
-			<div id="formFinto">
-				<h3 id="calcolaPlatos" onclick="calcolaPlatos()">Calcola</h3>
-				<h3 id="compraPlatos" onclick="compraPlatos()">Compra</h3>
-				<h4 id="totalePlatos"></h4>
-			</div>
-
-
-		</div><!-- FINE CORPO -->
-
-
-	</div><!-- FINE CASA BONITA -->
-
-
-
-	<div id="footerPlasma"></div>
-	<div id="footer">
-		<p>Mayta Gabriel</p>
-	</div>
-
-</body>
-
+    <div id="footerPlasma"></div>
+    <div id="footer">
+      <p>Mayta Gabriel</p>
+    </div>
+  </body>
 </html>

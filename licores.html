@@ -1,145 +1,132 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+  <head>
+    <title>No hay nada como la tequila mexicana</title>
 
-<head>
-	<title>No hay nada como la tequila mexicana</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./css/casabonita.css" />
+    <link rel="stylesheet" type="text/css" href="./css/licores.css" />
+    <script type="text/javascript" src="./js/casabonita.js"></script>
+  </head>
 
-	<link rel="stylesheet" type="text/css" href="./css/casabonita.css" />
-	<link rel="stylesheet" type="text/css" href="./css/licores.css" />
-	<script type="text/javascript" src="./js/casabonita.js"></script>
+  <body>
+    <div id="headerPlasma"></div>
+    <div id="headerNero"></div>
 
-</head>
+    <div id="casa_bonita">
+      <!-- INIZIO CASA BONITA -->
+      <div id="header">
+        <img onclick="home_CB()" src="./css/img/header.png" />
+      </div>
 
-<body>
+      <div id="menu">
+        <ul>
+          <li>
+            <p onclick="platos()">Platos</p>
+          </li>
+          <li>
+            <p style="background: #ff9933; color: #000000; cursor: default">
+              Licores
+            </p>
+          </li>
+          <li>
+            <p onclick="fiestas()">Fiestas</p>
+          </li>
+          <li>
+            <p onclick="chicas()">Chicas</p>
+          </li>
+          <li>
+            <p onclick="donde()" style="border-right: none">Donde</p>
+          </li>
+        </ul>
+      </div>
 
+      <div id="corpoLicores">
+        <!-- INIZIO CORPO -->
+        <div id="corpoLicoresPlasma"></div>
 
-	<div id="headerPlasma"></div>
-	<div id="headerNero"></div>
+        <div id="boxLicores">
+          <div class="licores" id="licor1">
+            <div class="plasmaLicorTitolo"></div>
+            <div class="panelPrezzo">
+              <h1 onclick="macho_plus()">+</h1>
+              <h3 id="macho">0</h3>
+              <h1 onclick="macho_minus()">-</h1>
+            </div>
+            <div class="plasmaPrezzo"></div>
+            <h2>e<br />l<br /><br />m<br />a<br />c<br />h<br />o</h2>
+          </div>
 
-	<div id="casa_bonita">
-		<!-- INIZIO CASA BONITA -->
-		<div id="header">
-			<img onclick="home_CB()" src="./css/img/header.png" />
-		</div>
+          <div class="licores" id="licor2">
+            <div class="plasmaLicorTitolo"></div>
+            <div class="panelPrezzo">
+              <h1 onclick="mamasita_plus()">+</h1>
+              <h3 id="mamasita">0</h3>
+              <h1 onclick="mamasita_minus()">-</h1>
+            </div>
+            <div class="plasmaPrezzo"></div>
+            <h2>m<br />a<br />m<br />a<br />s<br />i<br />t<br />a</h2>
+          </div>
 
-		<div id="menu">
-			<ul>
-				<li>
-					<p onclick="platos()">Platos</p>
-				</li>
-				<li>
-					<p style="background:#FF9933;color:#000000;cursor:default;">Licores</p>
-				</li>
-				<li>
-					<p onclick="fiestas()">Fiestas</p>
-				</li>
-				<li>
-					<p onclick="chicas()">Chicas</p>
-				</li>
-				<li>
-					<p onclick="donde()" style="border-right:none;">Donde</p>
-				</li>
-			</ul>
-		</div>
+          <div class="licores" id="licor3">
+            <div class="plasmaLicorTitolo"></div>
+            <div class="panelPrezzo">
+              <h1 onclick="desierto_plus()">+</h1>
+              <h3 id="desierto">0</h3>
+              <h1 onclick="desierto_minus()">-</h1>
+            </div>
+            <div class="plasmaPrezzo"></div>
+            <h2>d<br />e<br />s<br />i<br />e<br />r<br />t<br />o</h2>
+          </div>
 
-		<div id="corpoLicores">
-			<!-- INIZIO CORPO -->
-			<div id="corpoLicoresPlasma"></div>
+          <div class="licores" id="licor4">
+            <div class="plasmaLicorTitolo"></div>
+            <div class="panelPrezzo">
+              <h1 onclick="margarita_plus()">+</h1>
+              <h3 id="margarita">0</h3>
+              <h1 onclick="margarita_minus()">-</h1>
+            </div>
+            <div class="plasmaPrezzo"></div>
+            <h2>m<br />a<br />r<br />g<br />a<br />r<br />i<br />t<br />a</h2>
+          </div>
 
-			<div id="boxLicores">
-				<div class="licores" id="licor1">
-					<div class="plasmaLicorTitolo"></div>
-					<div class="panelPrezzo">
-						<h1 onclick="macho_plus()">+</h1>
-						<h3 id="macho">0</h3>
-						<h1 onclick="macho_minus()">-</h1>
-					</div>
-					<div class="plasmaPrezzo"></div>
-					<h2>e<br />l<br /><br />m<br />a<br />c<br />h<br />o</h2>
+          <div class="licores" id="licor5">
+            <div class="plasmaLicorTitolo"></div>
+            <div class="panelPrezzo">
+              <h1 onclick="cachaca_plus()">+</h1>
+              <h3 id="cachaca">0</h3>
+              <h1 onclick="cachaca_minus()">-</h1>
+            </div>
+            <div class="plasmaPrezzo"></div>
+            <h2>c<br />a<br />c<br />h<br />a<br />c<br />a</h2>
+          </div>
 
-				</div>
+          <div class="licores" id="licor6">
+            <div class="plasmaLicorTitolo"></div>
+            <div class="panelPrezzo">
+              <h1 onclick="orovana_plus()">+</h1>
+              <h3 id="orovana">0</h3>
+              <h1 onclick="orovana_minus()">-</h1>
+            </div>
+            <div class="plasmaPrezzo"></div>
+            <h2>o<br />r<br />o<br />v<br />a<br />n<br />a</h2>
+          </div>
 
-				<div class="licores" id="licor2">
-					<div class="plasmaLicorTitolo"></div>
-					<div class="panelPrezzo">
-						<h1 onclick="mamasita_plus()">+</h1>
-						<h3 id="mamasita">0</h3>
-						<h1 onclick="mamasita_minus()">-</h1>
-					</div>
-					<div class="plasmaPrezzo"></div>
-					<h2>m<br />a<br />m<br />a<br />s<br />i<br />t<br />a</h2>
-				</div>
+          <div id="formFinto">
+            <h3 id="calcolaLicores" onclick="calcolaLicores()">Calcola</h3>
+            <h3 id="compraLicores" onclick="compraLicores()">Compra</h3>
+            <h4 id="totaleLicores"></h4>
+          </div>
+        </div>
+      </div>
+      <!-- FINE CORPO -->
+    </div>
+    <!--FINE CASA BONITA -->
 
-				<div class="licores" id="licor3">
-					<div class="plasmaLicorTitolo"></div>
-					<div class="panelPrezzo">
-						<h1 onclick="desierto_plus()">+</h1>
-						<h3 id="desierto">0</h3>
-						<h1 onclick="desierto_minus()">-</h1>
-					</div>
-					<div class="plasmaPrezzo"></div>
-					<h2>d<br />e<br />s<br />i<br />e<br />r<br />t<br />o</h2>
-
-				</div>
-
-				<div class="licores" id="licor4">
-					<div class="plasmaLicorTitolo"></div>
-					<div class="panelPrezzo">
-						<h1 onclick="margarita_plus()">+</h1>
-						<h3 id="margarita">0</h3>
-						<h1 onclick="margarita_minus()">-</h1>
-					</div>
-					<div class="plasmaPrezzo"></div>
-					<h2>m<br />a<br />r<br />g<br />a<br />r<br />i<br />t<br />a</h2>
-				</div>
-
-				<div class="licores" id="licor5">
-					<div class="plasmaLicorTitolo"></div>
-					<div class="panelPrezzo">
-						<h1 onclick="cachaca_plus()">+</h1>
-						<h3 id="cachaca">0</h3>
-						<h1 onclick="cachaca_minus()">-</h1>
-					</div>
-					<div class="plasmaPrezzo"></div>
-					<h2>c<br />a<br />c<br />h<br />a<br />c<br />a</h2>
-				</div>
-
-				<div class="licores" id="licor6">
-					<div class="plasmaLicorTitolo"></div>
-					<div class="panelPrezzo">
-						<h1 onclick="orovana_plus()">+</h1>
-						<h3 id="orovana">0</h3>
-						<h1 onclick="orovana_minus()">-</h1>
-					</div>
-					<div class="plasmaPrezzo"></div>
-					<h2>o<br />r<br />o<br />v<br />a<br />n<br />a</h2>
-				</div>
-
-				<div id="formFinto">
-					<h3 id="calcolaLicores" onclick="calcolaLicores()">Calcola</h3>
-					<h3 id="compraLicores" onclick="compraLicores()">Compra</h3>
-					<h4 id="totaleLicores"></h4>
-				</div>
-
-
-			</div>
-
-		</div><!-- FINE CORPO -->
-
-
-	</div>
-	<!--FINE CASA BONITA -->
-
-
-
-	<div id="footerPlasma"></div>
-	<div id="footer">
-		<p>Mayta Gabriel</p>
-	</div>
-
-</body>
-
+    <div id="footerPlasma"></div>
+    <div id="footer">
+      <p>Mayta Gabriel</p>
+    </div>
+  </body>
 </html>
