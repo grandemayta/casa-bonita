@@ -1,0 +1,185 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: url("./img/platos.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../font/bebasneue/BebasNeue-webfont.eot");
+  src: url("../font/bebasneue/BebasNeue-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/bebasneue/BebasNeue-webfont.woff") format("woff"),
+    url("../font/bebasneue/BebasNeue-webfont.ttf") format("truetype"),
+    url("../font/bebasneue/BebasNeue-webfont.svg#BebasNeueRegular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#corpoPlatos {
+  position: relative;
+  z-index: 100;
+  float: left;
+  width: 1000px;
+  height: auto;
+  background: url("./img/compraOnline.png") no-repeat 60px 50px;
+}
+#corpoPlatosPlasma {
+  position: absolute;
+  z-index: 10;
+  width: 1000px;
+  height: 100%;
+  background: #000000;
+  opacity: 0.4;
+}
+.platos_CB {
+  position: relative;
+  z-index: 100;
+  float: left;
+  margin: 20px 0px 20px 350px;
+  width: 644px;
+  height: 164px;
+  overflow: hidden;
+}
+.platos_CB img {
+  float: left;
+  padding: 2px;
+  width: 220px;
+  height: 160px;
+  background: #000000;
+  border-radius: 10px;
+}
+.platos_CB h4 {
+  float: left;
+  margin: 0px 10px 0px 14px;
+  width: 390px;
+  font-family: "BebasNeueRegular";
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.platos_CB p {
+  float: left;
+  margin: 0px 10px 0px 14px;
+  width: 390px;
+  font-family: "BebasNeueRegular";
+  font-size: 22px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.pannello_Platos {
+  float: left;
+  margin: 10px 10px 0px 14px;
+  width: 390px;
+  height: 44px;
+  overflow: hidden;
+}
+.pannello_Platos h5 {
+  float: left;
+  margin: 6px 10px 0px 0px;
+  margin-right: 10px;
+  width: 120px;
+  font-family: "BebasNeueRegular";
+  font-size: 30px;
+  color: #ffffff;
+}
+.pannello_Platos h1 {
+  float: left;
+  margin: 2px 5px 0px 100px;
+  width: 40px;
+  height: 40px;
+  font-family: "BebasNeueRegular";
+  font-size: 40px;
+  text-align: center;
+  color: #282828;
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.pannello_Platos h2 {
+  float: left;
+  margin: 1px 5px 0px 5px;
+  padding: 6px 0px;
+  width: 52px;
+  height: 30px;
+  font-family: "BebasNeueRegular";
+  font-size: 28px;
+  color: #282828;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.pannello_Platos h6 {
+  float: left;
+  margin: 2px 0px 0px 5px;
+  width: 40px;
+  height: 40px;
+  font-family: "BebasNeueRegular";
+  font-size: 38px;
+  text-align: center;
+  color: #282828;
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.pannello_Platos img {
+  float: left;
+  margin: 1px 5px 0px 5px;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: #282828;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#formFinto {
+  position: relative;
+  z-index: 100;
+  float: right;
+  width: 644px;
+  height: 65px;
+  margin-bottom: 80px;
+}
+#formFinto h3 {
+  float: left;
+  width: 100px;
+  height: 26px;
+  margin: 20px 12px 0px 0px;
+  font-family: "BebasNeueRegular";
+  font-size: 24px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#compraPlatos {
+  display: none;
+}
+#formFinto h4 {
+  float: right;
+  width: autopx;
+  height: 26px;
+  margin: 10px 12px 0px 0px;
+  font-family: "BebasNeueRegular";
+  font-size: 40px;
+  text-align: right;
+  color: #ffffff;
+}

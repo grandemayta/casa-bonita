@@ -1,0 +1,178 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: url("./img/licores.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../font/bebasneue/BebasNeue-webfont.eot");
+  src: url("../font/bebasneue/BebasNeue-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/bebasneue/BebasNeue-webfont.woff") format("woff"),
+    url("../font/bebasneue/BebasNeue-webfont.ttf") format("truetype"),
+    url("../font/bebasneue/BebasNeue-webfont.svg#BebasNeueRegular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#corpoLicores {
+  position: relative;
+  z-index: 100;
+  float: left;
+  width: 1000px;
+  height: 800px;
+  background: url("./img/compraOnline.png") no-repeat 60px 50px;
+}
+#corpoLicoresPlasma {
+  position: absolute;
+  z-index: 10;
+  width: 1000px;
+  height: 100%;
+  background: #000000;
+  opacity: 0.4;
+}
+
+#boxLicores {
+  position: relative;
+  z-index: 100;
+  float: left;
+  width: 800px;
+  height: 580px;
+  margin: 40px 0px 0px 200px;
+}
+.licores {
+  position: relative;
+  z-index: 100;
+  float: left;
+  width: 240px;
+  height: 240px;
+  margin: 20px 0px 0px 20px;
+  background: #303030;
+}
+.licores h2 {
+  position: relative;
+  z-index: 102;
+  width: 28px;
+  height: 240px;
+  margin: 10px 0px 0px 10px;
+  font-family: "BebasNeueRegular";
+  font-size: 18px;
+  color: #ffffff;
+}
+.plasmaLicorTitolo {
+  position: absolute;
+  z-index: 101;
+  width: 28px;
+  height: 240px;
+  opacity: 0.2;
+  background: #000000;
+}
+.panelPrezzo {
+  position: absolute;
+  right: 0px;
+  z-index: 102;
+  width: 36px;
+  height: 148px;
+  margin-top: 45px;
+}
+.plasmaPrezzo {
+  position: absolute;
+  right: 0px;
+  z-index: 101;
+  width: 36px;
+  height: 148px;
+  margin-top: 45px;
+  background: #000000;
+  opacity: 0.4;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.panelPrezzo h1 {
+  position: relative;
+  z-index: 102;
+  height: 60px;
+  font-family: "BebasNeueRegular";
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.panelPrezzo h3 {
+  position: relative;
+  z-index: 102;
+  height: 40px;
+  font-family: "BebasNeueRegular";
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#licor1 {
+  background: url("./img/tequila1.jpg") no-repeat top center;
+}
+#licor2 {
+  background: url("./img/mojito1.jpg") no-repeat top center;
+}
+#licor3 {
+  background: url("./img/agua_desierto1.jpg") no-repeat top center;
+}
+#licor4 {
+  background: url("./img/ranchitos1.jpg") no-repeat top center;
+}
+#licor5 {
+  background: url("./img/cachaca1.jpg") no-repeat top center;
+}
+#licor6 {
+  background: url("./img/orovana1.jpg") no-repeat top center;
+}
+
+#formFinto {
+  position: relative;
+  z-index: 100;
+  float: left;
+  width: 800px;
+  height: 60px;
+}
+#formFinto h3 {
+  float: left;
+  width: 130px;
+  height: 34px;
+  margin: 10px 0px 0px 20px;
+  padding: 4px 0px;
+  background: #601011;
+  font-family: "BebasNeueRegular";
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+#compraLicores {
+  display: none;
+}
+#totaleLicores {
+  float: right;
+  width: auto;
+  height: 34px;
+  margin: 16px 20px 0px 0px;
+  font-family: "BebasNeueRegular";
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
